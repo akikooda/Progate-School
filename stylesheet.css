@@ -150,7 +150,10 @@ p{
 .gray-background_1{
 	background-color:#f4f4f4;
 	height:376px;
-	margin-bottom:121px;
+}
+
+.feature{
+	padding-top:121px;
 }
 
 .feature-icon{
@@ -158,8 +161,8 @@ p{
 	display: inline-block;
 	width:40%;
 	vertical-align: top;
-	margin-left:65px;
-	margin-bottom:61px;
+	padding-left:65px;
+	margin-bottom:60.5px;
 }
 
 .feature-icon h4{
@@ -180,41 +183,47 @@ p{
 .gray-background_2{
 	clear:left;
 	background-color:#f4f4f4;
-	height:1000px;
 	margin-bottom:110px;
+	height:863px;
 }
 
 .course-icon{
 	background-color: white;
 	width:28%;
+	margin:20px 13px;
 	padding:35px 15px;
 	text-align: center;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	height:547px;
+	display: inline-block;
 }
 
 .course-icon h2{
 	font-size: 32px;
-	font-weight:300;
+	font-weight:400;
 	color:white;
 	background-color: #323A45;
 	margin:0;
 	padding-top:30px;
 	padding-bottom:30px;
+	font-family: "Dosis", sans-serif;
 }
 
 .course-icon h3{
-	font-size: 32px;
-	font-weight:300;
-	color:#444;
+	font-size: 30px;
+	font-weight:400;
+	color:#555;
 	margin:0;
-	background-color:#f4f4f4;
-	padding-top:30px;
-	padding-bottom:30px;
+	background-color:#f0f0f0;
+	padding-top:40px;
+	padding-bottom:40px;
+	font-family: "Dosis", sans-serif;
 }
 
 .course-icon ul{
 	padding:30px;
 	margin:0;
-	margin-bottom:25px;
+	margin-bottom:18px;
 }
 
 .course-icon li{
@@ -232,6 +241,6 @@ p{
 	border:1px solid #24282e;
 	font-size:18px;
 	font-weight: 700;
-	padding:10px 20px;
+	padding:9px 20px;
 	margin:20px;
 }
