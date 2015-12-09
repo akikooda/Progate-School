@@ -242,6 +242,14 @@ p{
 	font-weight: 700;
 	padding:9px 20px;
 	margin:20px;
+	cursor:pointer;
+	transition:all 0.3s;
+}
+
+.subscription:hover{
+	background-color: #384147;
+	border: 1px solid #32383f;
+	color: #e8edef;
 }
 
 .course-icon-green h2{
@@ -299,7 +307,7 @@ p{
 .gray-background_3{
 	clear:left;
 	background-color:#f4f4f4;
-	height:863px;	
+	height:1500px;
 }
 
 
@@ -328,6 +336,7 @@ p{
 
 .column-section{
 	margin-top:25px;
+	margin-bottom:46px;
 }
 
 .column-box{
@@ -363,3 +372,26 @@ p{
 	margin:0;
 }
 
+.load-more-btn{
+	text-decoration: none;
+	background-color: #2d323a;
+	color:#c9d1d6;
+	border:1px solid #24282e;
+	font-size:18px;
+	font-weight: 600;
+	padding:10px 20px;
+	margin:20px;
+	font-family: "Dosis", sans-serif;
+	cursor:pointer;
+	transition:all 0.3s;
+}
+
+.load-more-btn:hover{
+	background-color:#384147;
+	border: 1px solid #32383f;
+	color: #e8edef;
+}
+
+.column-bottom-section{
+	margin-bottom:50px;
+}
