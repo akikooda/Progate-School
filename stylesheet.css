@@ -395,3 +395,56 @@ p{
 .column-bottom-section{
 	margin-bottom:50px;
 }
+
+.contact{
+	margin:0 auto;
+	background-image: url(images/backgrounds/contact.jpg);
+	background-size:cover;
+	height:500px;
+}
+
+
+.contact-inner{
+	margin:0 auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	height:500px;
+}
+
+.contact h3, h4, p, a{
+	color:white;
+}
+
+.contact h3{
+	text-align: center;
+}
+
+.section{
+	width:45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.input{
+	width:80%;
+	margin-bottom:15px;
+	border: none;
+	font-family: "Open Sans",sans-serif;
+	font-size:16px;
+	font-weight: 400;
+	padding:15px;
+	background-color:rgba(250, 250, 250, 0.08);
+	color:white;
+}
+
+.submit-btn{
+	text-decoration: none;
+	background-color: #0DC0C0;
+	padding:15px 20px;
+	font-weight:600;
+	font-family: "Open Sans",sans-serif;
+	margin-top:40px;
+}
+
+.fa{
+	margin-right:10px;
+}
