@@ -3,6 +3,7 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 
+/*-----ヘッダー部分-----*/
 
 .header{
 	width:100%;
@@ -13,6 +14,15 @@ body{
 	position:fixed;
 	z-index:10;
 	box-shadow: -1px 1px 1px rgba(0,0,0,0.1)
+}
+
+.header a{
+	text-decoration: none;
+}
+
+.header a:hover{
+	color:#40bfb0;
+	transition:all 0.3s;
 }
 
 .container{
@@ -50,13 +60,23 @@ body{
 	font-size:14px;
 	padding:0px 10px;
 	margin:0;
+	cursor:pointer;
 }
 
-.header-right li:hover{
-	cursor:pointer;
+.header-right a:link{
+	color:#323A45;
+}
+
+.header-right a:visited{
+	color:#323A45;
+}
+
+.header-right a:hover{
 	color:#40bfb0;
 	transition:all 0.3s;
 }
+
+/*-----トップ部分-----*/
 
 .top-wrapper{
 	margin:0 auto;
@@ -102,6 +122,8 @@ body{
 	cursor:pointer;
 }
 
+/*-----学習する言語-----*/
+
 .languages{
 	margin:0 auto;
 	text-align: center;
@@ -142,6 +164,8 @@ p{
 	color:#888;
 }
 
+/*-----特徴-----*/
+
 .features{
 	margin-top:60px;
 	text-align: center;
@@ -173,6 +197,8 @@ p{
 	text-align: left;
 	margin:0;
 }
+
+/*-----コースを選ぶ-----*/
 
 .price{
 	clear: left;
@@ -256,6 +282,8 @@ p{
 	background-color: #0DC0C0;
 }
 
+/*-----メンター紹介-----*/
+
 .mentors{
 	text-align: center;
 }
@@ -281,6 +309,8 @@ p{
 	margin:9px 0;
 }
 
+/*-----メッセージ-----*/
+
 .middle-message{
 	margin:0 auto;
 	background-image: url(images/backgrounds/night_view.jpg);
@@ -300,6 +330,8 @@ p{
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
+/*-----コラム-----*/
+
 .column{
 	text-align: center;
 }
@@ -307,7 +339,7 @@ p{
 .gray-background_3{
 	clear:left;
 	background-color:#f4f4f4;
-	height:1500px;
+	height:1487px;
 }
 
 
@@ -321,17 +353,19 @@ p{
 	margin-top:10px;
 	margin-right:4.5px;
 	font-family: "Dosis", sans-serif;
+	cursor:pointer;
 }
 
 .column-btn:hover{
 	background-color: #009ca8;
 	color:white;
-	transition:all 0.4s;	
+	transition:all 0.3s;	
 }
 
 .showall{
 	background-color: #009ca8;
 	color:white;
+	cursor: default;
 }
 
 .column-section{
@@ -396,21 +430,25 @@ p{
 	margin-bottom:50px;
 }
 
+/*-----お問い合わせ-----*/
+
+
 .contact{
 	margin:0 auto;
 	background-image: url(images/backgrounds/contact.jpg);
 	background-size:cover;
-	height:500px;
+	height:674px;
+	margin-bottom:66px;
 }
 
 
 .contact-inner{
 	margin:0 auto;
 	background-color: rgba(0, 0, 0, 0.6);
-	height:500px;
+	height:674px;
 }
 
-.contact h3, h4, p, a{
+.contact h3, .contact h4, .contact p, .contact a{
 	color:white;
 }
 
@@ -418,33 +456,123 @@ p{
 	text-align: center;
 }
 
+.contact h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
 .section{
-	width:45%;
 	display: inline-block;
 	vertical-align: top;
+	margin-top:1px;
+}
+
+.message-section{
+	width:58%;
+	margin-right:-0.5px;
+}
+
+.about-us-section{
+	width:40%;
 }
 
 .input{
-	width:80%;
-	margin-bottom:15px;
+	width:85%;
+	margin-bottom:20px;
 	border: none;
 	font-family: "Open Sans",sans-serif;
 	font-size:16px;
-	font-weight: 400;
+	font-weight: 300;
 	padding:15px;
 	background-color:rgba(250, 250, 250, 0.08);
 	color:white;
 }
 
+.input-form{
+	margin-bottom: 21px;
+
+}
+
+.message-input{
+	height:150px;
+}
+
 .submit-btn{
 	text-decoration: none;
 	background-color: #0DC0C0;
-	padding:15px 20px;
+	padding:16px 36px;
 	font-weight:600;
-	font-family: "Open Sans",sans-serif;
-	margin-top:40px;
+	font-family: "Dosis",sans-serif;
+	font-size: 18px;
+}
+
+.about-us-message{
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+
+.address-detail{
+	padding-top:2px;
+}
+
+.address-detail p{
+	margin:0 0 31px 0;
 }
 
 .fa{
-	margin-right:10px;
+	margin-right:15px;
+	font-size: 18px;
+}
+
+/*-----Follow Us-----*/
+
+.follow-us{
+	text-align: center; 
+	color:#555;
+	height:186px;
+}
+
+.follow-us h1{
+	font-size: 32px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+.sns-icon-section{
+	margin-top:37px;
+}
+
+.sns-icon{
+	text-decoration: none;
+	color:#323A45;
+}
+
+.fa-facebook, .fa-twitter{
+	display: inline-block;
+	font-size: 36px;
+	text-decoration: none;
+}
+
+.fa-facebook:hover{
+	color:#40bfb0;
+	transition:all 0.3s;
+}
+
+.fa-twitter:hover{
+	color:#40bfb0;
+	transition:all 0.3s;
+}
+
+
+/*-----Footer-----*/
+
+.footer{
+	text-align: center;
+	background-color:#222;
+	height:69px;
+	padding-top:25px;
+}
+
+.footer p{
+	color: #999;
 }
