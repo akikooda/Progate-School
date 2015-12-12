@@ -63,11 +63,7 @@ body{
 	cursor:pointer;
 }
 
-.header-right a:link{
-	color:#323A45;
-}
-
-.header-right a:visited{
+.header-right a{
 	color:#323A45;
 }
 
@@ -120,6 +116,14 @@ body{
 	border:1px solid white;
 	transition:all 0.3s;
 	cursor:pointer;
+}
+
+#detail-message{
+	margin:0;
+	margin-top:30px;
+	color: white;
+	font-size: 14px;
+	display:none;
 }
 
 /*-----学習する言語-----*/
