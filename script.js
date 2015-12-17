@@ -4,14 +4,12 @@ $(function(){
 	$('.detail').click(function(){
 
 		if($('.detail').hasClass('detail-active')){
-			console.log('出力');
 			$('.detail').text('もっと詳しく');
 			$('#detail-message').hide();
 			$('.top-inner').css('padding','173px 0 150px 0');
 			$('.detail').removeClass('detail-active');
 
 		}else{
-			console.log('出力');
 			$('.detail').text('閉じる');
 			$('#detail-message').fadeIn();
 			$('.top-inner').css('padding','173px 0 120px 0');
@@ -21,6 +19,12 @@ $(function(){
 	});
 	
 	// メンター紹介
+	$('.autoplay').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
 	
 	// コラム
 	

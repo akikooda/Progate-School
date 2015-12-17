@@ -299,12 +299,14 @@ p{
 	padding:10px;
 	margin-bottom:26px;
 }
+
 .mentor-photo img{
 	width: 200px;
 	border-radius: 200px;
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
 	margin-bottom:10px;
+	text-align: center;
 }
 
 .mentor-profile{
