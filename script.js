@@ -20,14 +20,30 @@ $(function(){
 	
 	// メンター紹介
 	$('.autoplay').slick({
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
 	});
 	
 	// コラム
+
 	
 	// お問い合わせ
+	$('.submit-btn').click(function(){
+			if($("input[name='email-input']").val()==""){
+				$('.please-input-email').css('display','block');
+			}else{
+				if($("input[name='subject-input']").val()==""){
+					$('.please-input-subject').css('display','block');
+				}else{
+					if($("textarea[name='message-input']").val()==""){
+						$('.please-input-message').css('display','block');
+				}else{
+
+				}
+			}
+		}
+	});
 
 });
