@@ -23,7 +23,7 @@ $(function(){
 		dots:true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		speed: 300,
 		infinite:true,
 	});
@@ -65,20 +65,27 @@ $(function(){
 	});
 	
 	// お問い合わせ
-	$('.submit-btn').click(function(){
-			if($("input[name='email-input']").val()==""){
-				$('.please-input-email').css('display','block');
-			}else{
-				if($("input[name='subject-input']").val()==""){
-					$('.please-input-subject').css('display','block');
-				}else{
-					if($("textarea[name='message-input']").val()==""){
-						$('.please-input-message').css('display','block');
-				}else{
 
-				}
+	$('form').submit(function(){
+
+		var checkSubmit = true;
+
+		$('input, textarea').each(function(){
+			if($(this).val()==""){
+				$(this).prev('.please-input').css('display','block');
+				checkSubmit = false;
+				console.log(checkSubmit);
 			}
+
+		});
+
+		if(checkSubmit == true){
+			$('form').html('<h4>お問い合わせありがとうございます。</h4>')
 		}
+
+		return false;
+
 	});
+
 
 });
