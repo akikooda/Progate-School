@@ -19,15 +19,41 @@ $(function(){
 	});
 	
 	// メンター紹介
-	$('.autoplay').slick({
-		slidesToShow: 3,
+	$('.auto-play').slick({
+		dots:true,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplay: false,
+		speed: 300,
+		infinite:true,
+		adaptiveHeight: true,
 	});
 	
 	// コラム
 
+	$('.column-btn').click(function(){
+
+		var id_name = $(this).attr('id');
+
+		if(id_name == 'all'){
+			$('.column-box').fadeIn();
+			$('.column-btn').removeClass('active');
+			$(this).addClass('active');
+
+		}else if(id_name == 'tips'){
+			$('.columns').fadeOut();
+			$('.tips').fadeIn();
+			$('.column-btn').removeClass('active');
+			$(this).addClass('active');
+			
+		}else if(id_name == 'column-clicked'){
+			$('.tips').fadeOut();
+			$('.columns').fadeIn();
+			$('.column-btn').removeClass('active');
+			$(this).addClass('active');
+		}
+
+	});
 	
 	// お問い合わせ
 	$('.submit-btn').click(function(){

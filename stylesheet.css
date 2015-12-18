@@ -290,14 +290,15 @@ p{
 
 .mentors{
 	text-align: center;
+	height:611px;
 }
 
 
 .mentor-box{
 	display: inline-block;
-	width:80%;
 	padding:10px;
 	margin-bottom:26px;
+	width:936px;
 }
 
 .mentor-photo img{
@@ -306,7 +307,6 @@ p{
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
 	margin-bottom:10px;
-	text-align: center;
 }
 
 .mentor-profile{
@@ -368,7 +368,7 @@ p{
 	transition:all 0.3s;	
 }
 
-.showall{
+.active{
 	background-color: #009ca8;
 	color:white;
 	cursor: default;
