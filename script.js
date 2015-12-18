@@ -26,10 +26,19 @@ $(function(){
 		autoplay: false,
 		speed: 300,
 		infinite:true,
-		adaptiveHeight: true,
 	});
 	
 	// コラム
+
+	$('.column-photo').hover(
+		function(){
+			$(this).find('.zoom-black').fadeIn(200);
+			$(this).find('img').css('transform','scale(1.2)');
+		},
+		function(){
+			$(this).find('.zoom-black').fadeOut(200);
+			$(this).find('img').css('transform','scale(1.0)');
+		});
 
 	$('.column-btn').click(function(){
 
